@@ -1,16 +1,5 @@
-# base-project-template
+# TDD Practice
 
-A basic boilerplate project template of items being set up each time. This includes webpack basic setup with ability to serve html and css files and resources.
-
-## Included:
-
-### Plugins:
-  - HtmlWebPack for html templates
-
-### Rules:
-  - html loaders
-  - css loaders
-  - image loaders
-
-### Development Server:
-  - Set to watch the source folder and template.html
+- This was an interesting exercise to go through. Testing can be fun, but knowing what to test and
+  exactly how to go about setting the tests up is very challenging.
+- This is a skill that will take some time to get a good feel for and a lot of practice.
