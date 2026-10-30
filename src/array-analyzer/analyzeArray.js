@@ -1,4 +1,8 @@
 const analyzeArray = (array) => {
+  if (array.length === 0) {
+    throw new Error("Array cannot be empty");
+  }
+
   const length = array.length;
 
   const sum = array.reduce((total, number) => {
