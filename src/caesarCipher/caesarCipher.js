@@ -1,14 +1,15 @@
 const UPPERCASE_START = 65;
 const LOWERCASE_START = 97;
 const ALPHABET_LENGTH = 26;
+const LETTER_PATTERN = /[a-zA-Z]/;
 
-const caesarChipher = (string, shift) => {
+const caesarCipher = (string, shift) => {
   let result = "";
 
   shift = shift % ALPHABET_LENGTH;
 
   for (const character of string) {
-    if (!/[a-zA-Z]/.test(character)) {
+    if (!LETTER_PATTERN.test(character)) {
       result += character;
       continue;
     }
@@ -26,4 +27,4 @@ const caesarChipher = (string, shift) => {
   return result;
 };
 
-export default caesarChipher;
+export default caesarCipher;
